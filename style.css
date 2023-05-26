@@ -12,6 +12,17 @@
     url('./font/ttlake/TTLakes-Regular.woff') format('woff'),
     url('./font/ttlake/TTLakes-Regular.eot') format('eot');
 }
+.info__services::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    transform: translate(0, 5px);
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
 html {
     overflow-x: hidden;
 }
