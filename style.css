@@ -12,8 +12,14 @@
     url('./font/ttlake/TTLakes-Regular.woff') format('woff'),
     url('./font/ttlake/TTLakes-Regular.eot') format('eot');
 }
+html {
+    overflow-x: hidden;
+}
 button{
     height: 40px;
+}
+.info__button-next {
+    font-family: 'ttlake';
 }
 .info__img-next{
     transform: translate(0, 7px);
@@ -47,10 +53,13 @@ button{
 }
 .header-nav button {
     border: none;
-    padding: 0;
 }
 .header-nav__check-status{
     background-image: url("img/checkStatus.svg");
+}
+article {
+    display: flex;
+    flex-direction: column;
 }
 .info__button{
     font-family: ttlake_light;
@@ -83,6 +92,15 @@ button{
     border-style: solid;
     border-radius: 6px;
 }
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.info__img-next{
+    background-image: url("img/next-button.svg");
+    height: 10.29px;
+    width: 7.41px;
+}
 .info__navigation{
     overflow-x: scroll;
     overflow-y: hidden;
@@ -105,7 +123,6 @@ body {
 }
 .red-button{
     background-repeat: no-repeat;
-    background-size: 16px;
     background-position: center;
     align-self: center;
     width: 40px;
@@ -141,7 +158,7 @@ header{
 .info__img-next {
     align-self: center;
     margin-right: 16px;
-    transform: translate(0px, 6px);
+    transform: translate(0px, 7px);
 }
 button {
     font-family: ttlake_light;
@@ -165,12 +182,6 @@ button {
     header{
         border: none;
     }
-    .header-nav__pc-button{
-        display: none;
-    }
-    .header-nav__menu{
-        display: none;
-    }
     .info__navigation{
         margin-left: 44px;
         margin-right: 30px;
@@ -189,8 +200,12 @@ button {
     }
     .info__information{
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        margin-left: 8px;
+        margin-left: 34px;
+    }
+    .info__text-section{
+        flex-direction: column;
     }
     .info__main-img{
         width: 40vw;
@@ -203,7 +218,6 @@ button {
         border-radius: 6px;
     }
     .info__text {
-        margin-left: 34px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -215,7 +229,6 @@ button {
     }
     .info__main-text-desktop{
         width: 50vw;
-        flex-direction: column;
     }
     .info{
         display: flex;
@@ -238,7 +251,6 @@ button {
         margin: 0px;
         padding: 0px;
         justify-content: flex-start;
-        align-items: flex-start;
         transform: translate(-32px, 42px);
     }
     .header-nav__repair-text{
@@ -250,9 +262,12 @@ button {
         width: 130px;
         transform: translate(0, -7px);
     }
-}
-.info__button-next {
-    font-family: 'ttlake';
+    .phone-header{
+        display: none;
+    }
+    .header-nav button{
+        transform: translate(0, -5px);
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1119px) {
@@ -280,19 +295,8 @@ button {
         flex-direction: column;
         justify-content: space-between;
     }
-    .info__information{
-        display: flex;
-        justify-content: space-between;
-        margin-left: 8px;
-    }
     .info__reviews{
         display: none;
-    }
-    .info__text{
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
     }
     .info__main-text-desktop{
         width: 40vw;
@@ -304,6 +308,10 @@ button {
     }
     body{
         overflow-x: hidden;
+    }
+    .info__main-img-section{
+        flex-direction: row;
+        justify-self: flex-end;
     }
     .info__main-img{
         width: 45vw;
@@ -333,6 +341,27 @@ button {
     }
     .info{
         margin:16px;
+    }
+    .info__information{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 24px;
+    }
+    .info__text-section{
+        flex-direction: column;
+    }
+    h1 {
+        margin-left: 24px;
+    }
+    .info__button_first{
+        margin-left: 24px;
+    }
+    .info__text-section{
+        width: 40%;
+    }
+    .desktop-header{
+        display: none;
     }
 }
 @media (max-width: 768px) {
@@ -403,5 +432,17 @@ button {
     }
     .header-nav__check-status{
         margin-right: 16px;
+    }
+    h1{
+        margin-left: 16px;
+    }
+    .info__button_first{
+        margin-left: 16px;
+    }
+    .info__text-section{
+        margin-left: 16px;
+    }
+    .desktop-header{
+        display: none;
     }
 }
