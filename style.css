@@ -525,7 +525,7 @@ header h3{
     margin-left: 16px;
 }
 
-.brands-list__element div {
+.brands-list__button{
     position: relative;
     justify-content: center;
     align-items: center;
@@ -538,7 +538,7 @@ header h3{
     cursor: pointer;
 }
 
-.brands-list__element div::before {
+.brands-list__button::before {
      content: '';
      position: absolute;
      display: block;
@@ -552,8 +552,8 @@ header h3{
 
  }
 .brands-list__img-next{
-    margin-right: 16px;
-    transform: translate(0px, -7px);
+    margin-right: 0px;
+    transform: translate(0, -7px);
 }
 button  {
     background-color: transparent;
