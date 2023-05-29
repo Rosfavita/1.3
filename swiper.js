@@ -4,7 +4,7 @@ function handleResize() {
     var windowWidth = window.innerWidth;
     let element = document.getElementsByClassName('check-width')
     let element2 = document.getElementsByClassName('brands-list__navigation')
-    if (windowWidth > 768) {
+    if (windowWidth >= 767) {
         if (swiper) {
             swiper.destroy(); // Уничтожение Swiper
             swiper = null;
