@@ -399,7 +399,7 @@ button {
         display: none;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .header-nav__chapter{
         transform: translate(-32px, 104px);
     }
