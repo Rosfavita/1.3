@@ -12,7 +12,19 @@
     url('./font/ttlake/TTLakes-Regular.woff') format('woff'),
     url('./font/ttlake/TTLakes-Regular.eot') format('eot');
 }
-.info__services::before{
+.brands-list__button-next-hide {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+.brands-list__button-next {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+.header-nav__services::before{
     content: "";
     position: absolute;
     left: 0px;
@@ -31,9 +43,6 @@ button{
 }
 .info__button-next {
     font-family: 'ttlake';
-}
-.info__img-next{
-    transform: translate(0, 7px);
 }
 .info__button{
     display: flex;
@@ -141,10 +150,10 @@ body {
     border-radius: 50%;
     background-color: #FF3E79;
 }
-.info__chapter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.header-nav__chapter{
+    position: absolute;
+    top: -7px;
+    left: 32px;
 }
 
 .info__choise{
@@ -155,7 +164,7 @@ header{
     border-bottom: 1px solid #D9FFF5;
     padding-bottom: 32.59px;
 }
-.info__services {
+.header-nav__services {
     font-family: 'ttlake';
     font-size: 28px;
     line-height: 40px;
@@ -167,7 +176,6 @@ header{
     background-color: transparent;
 }
 .info__img-next {
-    align-self: center;
     margin-right: 16px;
     transform: translate(0px, 7px);
 }
@@ -176,6 +184,7 @@ button {
     font-size: 16px;
 }
 @media (min-width: 1120px) {
+
     .header-nav{
         padding: 0;
         display: flex;
@@ -252,7 +261,7 @@ button {
         background-color: #F8F8F8;
         height: 0;
     }
-    .info__services{
+    .header-nav__services{
         margin-left: 32px;
     }
     .header-nav{
@@ -282,6 +291,12 @@ button {
 }
 
 @media (min-width: 769px) and (max-width: 1119px) {
+    .header-nav__chapter{
+        transform: translate(-32px, 104px);
+    }
+    .phone-header{
+        margin-bottom: 80px;
+    }
     .header-nav__repair-text{
         display: none;
     }
@@ -376,6 +391,12 @@ button {
     }
 }
 @media (max-width: 768px) {
+    .header-nav__chapter{
+        transform: translate(-32px, 104px);
+    }
+    .phone-header{
+        margin-bottom: 80px;
+    }
     .info__button-next {
         font-family: 'ttlake';
     }
@@ -503,11 +524,36 @@ header h3{
 .brands-list__element img{
     margin-left: 16px;
 }
-.brands-list__element div{
-    width: 40px;
-    height: 40px;
-    background-image: url("img/brands-more.svg");
+
+.brands-list__element div {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: solid #FF3E79;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-right: 36px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.brands-list__element div::before {
+     content: '';
+     position: absolute;
+     display: block;
+     width: 40px;
+     height: 40px;
+     border: 2px solid #FF3E79;
+     border-radius: 100%;
+     top: calc(50% + 2px);
+     left: calc(50% + 2px);
+     transform: translate(-50%,-50%);
+
+ }
+.brands-list__img-next{
     margin-right: 16px;
+    transform: translate(0px, -7px);
 }
 button  {
     background-color: transparent;
