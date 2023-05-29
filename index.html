@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="desktop-header">
+<header class="desktop-header" style="margin-bottom: 71px">
     <nav class = "header-nav">
         <button class = "header-nav__right-button header-nav__check-status red-button">
         </button>
@@ -28,6 +28,11 @@
         <label class="header-nav__repair-text">
             Оставить заявку
         </label>
+        <div class="header-nav__chapter">
+            <h1 class = "info__services">
+                Услуги и сервисы
+            </h1>
+        </div>
     </nav>
 </header>
 <header class="phone-header">
@@ -48,84 +53,78 @@
             <button class="header-nav__menu red-button">
             </button>
     </nav>
-</header>
-<main class = "info">
-    <div class="info__chapter">
-        <h1 class = "info__services">
+    <div class="header-nav__chapter">
+        <h1 class = "header-nav__services">
             Услуги и сервисы
         </h1>
     </div>
+</header>
+<main class = "info">
+
         <nav>
             <ul class="info__navigation">
                 <li>
-                    <button class="info__button info__button_first">
+                    <a class="info__button info__button_first">
                         <p>
                             Ремонтируемые бренды
                         </p>
-                    </button>
+                    </a>
                 </li>
                 <li>
-                    <button class="info__button">
+                    <a class="info__button">
 
                         <p>
                             Ремонтируемые устройства
                         </p>
-                    </button>
+                    </a>
                 </li>
                 <li>
-                    <button class="info__button">
+                    <a class="info__button">
                         <p>
                             Дополнительные услуги
                         </p>
-                    </button>
+                    </a>
                 </li>
                 <li>
-                    <button class="info__button">
+                    <a class="info__button">
                         <p>
                             Цены на услуги
                         </p>
-                    </button>
+                    </a>
                 </li>
                 <li>
-                    <button class="info__button">
+                    <a class="info__button">
                         <p>
                             Адреса сервисных центров
                         </p>
-                    </button>
+                    </a>
                 </li>
                 <li>
-                    <button class="info__button">
+                    <a class="info__button">
                         <p>
                             Специальные цены
                         </p>
-                    </button>
+                    </a>
                 </li>
             </ul>
         </nav>
         <button class="info__reviews">Отзывы</button>
     <article class="info__information">
-        <div class="info__text-section">
-            <section class="info__text">
+        <div class="info__text-section info__text">
                 <p class="info__main-text">
                     Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                     Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                 </p>
-            </section>
-            <section class="info__main-text-desktop">
-                <p>
+                <p class="info__main-text-desktop">
                     Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="info__main-text-desktop-full">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
                 </p>
-            </section>
-            <section >
+
                 <button class="info__button-next button">
                     <div class="info__img-next"></div>
-                    <p>Читать далее</p>
+                    Читать далее
                 </button>
-            </section>
         </div>
-        <section>
-            <img class="info__main-img" src="img/main_img.png" alt="">
-        </section>
+            <img class="info__main-img" src="img/main-img.jpg" alt="">
     </article>
 </main>
 <header class="brands-header">
@@ -154,11 +153,11 @@
 <footer>
     <button class="brands-list__button-next button">
         <div class="brands-list__img-next"></div>
-        <p>Показать все</p>
+        Показать все
     </button>
     <button class="brands-list__button-next-hide button">
         <div class="brands-list__img-next"></div>
-        <p>Скрыть</p>
+        Скрыть
     </button>
 </footer>
 <script src="swiper.js"></script>
